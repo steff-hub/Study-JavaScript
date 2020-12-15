@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+
+        body {
+            background-color: #839192;           
+             Color:#97BFBF ;
+             font: 25pt arial;
+        }
+   
+        </style>
+        <style>
+            div#meet {
+                background:#97BFBF;
+                color: whitesmoke;
+                padding: 50px;
+                padding-bottom: 10px;
+                margin:auto;
+                font: normal 30pt arial;
+                width: 900px;
+                height:90px;
+               
+                line-height: 90px;
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+    <!-- Ha como dispsarar a interatividade no html declarando na div ouuuuu olhe a baixo como se faz no JS
+     <div id="meet" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    -->
+    <div id="meet">
+        
+        Interactive......
+
+    </div>
+
+
+    <script>
+
+       
+
+        var meet = window.document.getElementById('meet')
+                         // disarando a interatividade no JS
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair) 
+
+
+
+        function clicar() {
+            // Quando executar o clicar , essa função vai ser executada.
+           // var meet = window.document.getElementById('meet')
+            meet.innerText ='Voce Clicou!'
+            meet.style.background = '#A5BFBF'
+            meet.style.color = '#FCF9F9 '
+
+        }
+
+        function entrar(){
+
+           // var meet = window.document.getElementById('meet')
+            meet.innerText = 'Clique para entrar!'
+            meet.style.background = '#657171 '
+            meet.style.color = '#FCF9F9 '
+    
+    
+        }
+
+        function sair(){
+           // var meet = window.document.getElementById('meet')
+            meet.innerText = 'Volte Aqui!!!'
+            meet.style.background = '#BCB8B8  '
+            meet.style.color = 'black'
+        }
+
+
+        /*se deseja que a function altere a var sem declarar dentro de cada uma delas, deixe a var de fora da function, dentro do script. Se deseja que a function execute uma var diferente , especifique dentro de cada function a var que será executada.*/
+
+
+
+    </script>
+</body>
+</html>

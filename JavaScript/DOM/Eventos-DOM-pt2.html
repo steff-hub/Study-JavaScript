@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom-parte-2</title>
+
+    <style>
+
+
+        body {
+            background-color: #839192;           
+             Color:#97BFBF ;
+             font: 25pt arial;
+        }
+   
+        </style>
+        <style>
+            div#meet {
+                background:#97BFBF;
+                color: whitesmoke;
+                padding: 50px;
+                padding-bottom: 10px;
+                margin:auto;
+                font: normal 30pt arial;
+                width: 900px;
+                height:90px;
+               
+                line-height: 90px;
+                text-align: center;
+            }
+
+            input{
+                font: normal 24px arial;
+            }
+
+            div#res{
+            margin-top: 60px;
+            
+
+        }
+
+        </style>
+</head>
+<body>
+
+    <h1>Somando Valores</h1>
+    <input type="number" name="text1" id="text1"> +
+    <input type="number" name="text2" id="text2">
+    <input type="button" value="somar" onclick="somar()">
+
+    <div id="res">Result =</div>
+
+
+
+    <script>
+        
+        function somar() {
+            //querySelector tbm pode ser usado se seu navegador for compativel
+
+            var text1 = window.document.getElementById('text1')
+            var text2 = window.document.getElementById('input#text2')
+            var res = window.document.getElementById('res')
+            
+
+            var n1 = Number.parseInt('text1.value')
+            
+            var n2 = Number.parseInt('text2. = n1 + n2')
+
+            var s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+
+           
+
+        }
+    </script>
+    
+</body>
+</html>

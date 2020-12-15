@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+    <style>
+        body{
+            background-color:black;
+            background: black;
+            Color: white;
+            font: 25pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+   <h1>
+       Iniciando estudos com o DOM
+   </h1> 
+
+   
+   <p>
+        O resultado vai aqui
+    </p>
+
+    <p>
+        Aprendendo usar o <strong>DOM</strong> em JavaScript
+    </p>
+
+   <div id="msg">
+       Clique em mim 
+    </div>
+
+    <script>
+       // window.document.write('Aqui depois de entender o que é sua arvore, você pode modificar e acrecentar componentes buscando ele de sua arvore.Lembre-se dos PARENT e CHILD.')
+
+        //window.document.write(window.document.URL)
+
+                          // aprendendo a usar os selecionadores
+
+        var corpo = window.document.body
+        corpo.style.background = '#839192 '
+
+               //por marca
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim:' + p1.innerText)
+        p1.style.color = '#454A4A '
+        
+
+               //por ID
+
+        /*var d = window.document.getElementById('msg')
+        d.style.background = '#97BFBF '
+        d.innerText = 'Aprendendo...................'*/
+
+
+                 // por nome de
+
+                /* var d = window.document.getElementsByName('msg')[1]
+                 d.style.background = '#97BFB'
+                 d.innerText = 'Olá'*/
+
+                 // por class
+
+                /* var d = window.document.getElementsByClassName*/
+
+
+                 // por seletor // usando o querySelector ou querySelectorAll
+
+                 /*var d = window.document.querySelector('div#msg')
+                 d.style.background = '#97BFB'*/
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

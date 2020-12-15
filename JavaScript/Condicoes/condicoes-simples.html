@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições </title>
+    <script defer src="aula11.js"></script>
+
+    <style>
+        body {
+            background-color: #444747;
+            Color: #97BFBF;
+            font: 25pt arial;
+            margin-left: 60px;
+        }
+
+        input.sist {
+            height: 50px;
+            width: 50px;
+            color: black;
+            background: #848685;
+        }
+
+        input.botao {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            color: black;
+            background: #848685;
+
+        }
+
+        h1 {
+
+            Background: black;
+            color: white;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+
+    Velocidade do Carro <input class="sist" type="number" id="vel"> km/h.
+    <input class="botao" type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+        Result:<br />
+        <strong> Retire seu comprovante.</strong>
+    </div>
+
+
+    <!-- PAIS-->
+
+
+    <h1> Sistema de nacionalidade </h1>
+
+    Voce nasceu em que pais? <input type="text" name="pais" id="pais">
+    <input type="button" value="Resgistar" onclick="Verificar()">
+    <div id="nas">
+        Você é :
+
+    </div>
+
+</body>
+
+</html>
